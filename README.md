@@ -1,1 +1,1 @@
-yet another (uncomplete) game engine in C and OpenGL
+Hysteria is a simple game engine in C and OpenGL. Simple but can't hide details from you!

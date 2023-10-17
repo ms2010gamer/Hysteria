@@ -11,7 +11,8 @@ H_BIN_DIR=Bin/Hysteria
 H_SRC_FILES=$(H_VND_DIR)/GLAD/glad.c \
 			$(H_SRC_DIR)/Core/Window.c \
 			$(H_SRC_DIR)/Graphics/Shader.c \
-			$(H_SRC_DIR)/Graphics/Buffer.c
+			$(H_SRC_DIR)/Graphics/Buffer.c \
+			$(H_SRC_DIR)/Graphics/VertexArray.c
 
 build_hysteria:
 	gcc -shared $(H_SRC_FILES) -o $(H_BIN_DIR)/hysteria.dll -I$(H_INC_DIR) -L$(H_LIB_DIR) \

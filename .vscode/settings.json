@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "window.h": "c",
-        "shader.h": "c"
+        "shader.h": "c",
+        "vertexarray.h": "c"
     }
 }

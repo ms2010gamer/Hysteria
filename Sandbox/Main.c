@@ -2,6 +2,7 @@
 
 #include "Graphics/Shader.h"
 #include "Graphics/Buffer.h"
+#include "Graphics/VertexArray.h"
 
 int main()
 {
@@ -34,15 +35,11 @@ int main()
 	    1, 2, 3    // second triangle
 	};
 
-    unsigned int vao;
-    glGenVertexArrays(1, &vao);
-    glBindVertexArray(vao);
-
+    VertexArray vao = CreateVertexArray();
     VertexBuffer vbo = CreateVertexBuffer(vertices, sizeof(vertices));
     ElementBuffer ebo = CreateElementBuffer(indices, sizeof(indices));
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
+    VertexArrayData(0, 3, GL_FLOAT, 3 * sizeof(float), (void*)0);
 
     while (!glfwWindowShouldClose(window.window))
     {
