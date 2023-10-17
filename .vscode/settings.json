@@ -2,6 +2,8 @@
     "files.associations": {
         "window.h": "c",
         "shader.h": "c",
-        "vertexarray.h": "c"
+        "vertexarray.h": "c",
+        "stb_image.h": "c",
+        "glad.h": "c"
     }
 }

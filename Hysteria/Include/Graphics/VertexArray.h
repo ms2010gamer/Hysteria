@@ -8,7 +8,7 @@ typedef struct VertexArray
 } VertexArray;
 VertexArray CreateVertexArray();
 
-void Bind(VertexArray vao);
+void BindVertexArray(VertexArray vao);
 void UnBindVertexArray();
 void RemoveVertexArray(VertexArray vao);
 
